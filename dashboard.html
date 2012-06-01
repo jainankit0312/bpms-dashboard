@@ -1,0 +1,99 @@
+<html>
+<head>
+<title>Intalio|BPMS-DashBoard</title>
+
+<link rel="stylesheet" type="text/css" href="style/dashboard.css" media="screen" />
+
+<script src="scripts/jquery.js"></script>
+<script src="scripts/scrollbars.js"></script>
+
+
+<link class="include" rel="stylesheet" type="text/css" href="style/scrollbars.css" />
+<link class="include" rel="stylesheet" type="text/css" href="style/scrollbars-demo.css" />
+
+<link class="include" rel="stylesheet" type="text/css" href="style/chart/jquery.jqplot.min.css" />
+<script class="include" type="text/javascript" src="scripts/chart/jquery.jqplot.min.js"></script>
+<script class="include" type="text/javascript" src="scripts/chart/jqplot.barRenderer.min.js"></script>
+<script class="include" type="text/javascript" src="scripts/chart/jqplot.categoryAxisRenderer.min.js"></script>
+<script class="include" type="text/javascript" src="scripts/chart/jqplot.pointLabels.min.js"></script>
+
+
+<script src="scripts/dash.js"></script> 
+</head>
+<body>
+<div id="header" class="io-header">
+	<img src="images/logo.png" alt="Intalio Inc." class="io-header-logo">
+	<img src="images/ui.jpeg" title="Intalio|workflow" alt="ui-fw" class="io-header-uifw">
+	<img src="images/console.jpeg" title="Intalio|Console" alt="Console" class="io-header-console">
+	<img src="images/refresh.png" title="Refresh" alt="Intalio Inc." class="io-header-refresh" onClick="location.reload();">
+	<img src="images/logout.gif" title="Log out" alt="Intalio Inc." class="io-header-logout">
+	<a  class="io-header-user">Welcome Intalio\admin !!</a>
+	
+</div>
+<div id="footer" class="io-footer">
+<a class="io-footer-data">Powered By : Intalio | BPMS</a>
+</div>
+<div id="dashlet-body" class="io-dashlet-body">
+
+	<div id="dashlet1" class="io-dashlet io-dashlet1" >
+		<img src="images/tick.png" alt="" class="io-dashlet-image">
+		<a class="io-dashlet-heading"> Tasks </a>
+		<b id="task1m">1m </b>		
+		<b id="task1w">1w |</b>
+		<b id="task2d">2d |</b>
+		<b id="task1d">1d |</b>
+
+		<ul id="tasklist">
+		<li>You got 5 new tasks.
+		<li>2 tasks were claimed by user 'intalio\admin'.
+		<li>'intalio\admin' re-assigned 1 task to you.
+		</ul>
+		
+	</div>
+
+
+	<div id="dashlet2" class="io-dashlet io-dashlet2">
+		<img src="images/notification.png" alt="" class="io-dashlet-image">
+		<a class="io-dashlet-heading"> Notifications </a>
+		<b id="not1m">1m </b>		
+		<b id="not1w">1w |</b>
+		<b id="not2d">2d |</b>
+		<b id="not1d">1d |</b>
+
+		<ul id="nots">
+		<li>10 instances got failed.
+		<li>20 instances got terminated.
+		<li>30 instances got completed.
+		<li>40 instances are running.
+		</ul>
+
+	</div>
+
+	<div id="dashlet3" class="io-dashlet io-dashlet3">
+		<img src="images/event.png" alt="" class="io-dashlet-image">
+		<a class="io-dashlet-heading"> Events </a>
+		<b id="eve1m">1m </b>		
+		<b id="eve1w">1w |</b>
+		<b id="eve2d">2d |</b>
+		<b id="eve1d">1d |</b>
+
+		<ul id="events">
+		
+		</ul>
+	</div>
+
+	<div id="dashlet4" class="io-dashlet io-dashlet4">
+		<img src="images/barchart.jpg" alt="" class="io-dashlet-image">
+		<a class="io-dashlet-heading"> Charts </a>
+		<b id="cha1m">1m </b>		
+		<b id="cha1w">1w |</b>
+		<b id="cha2d">2d |</b>
+		<b id="cha1d">1d |</b>
+
+		<div id="barChart" class="io-dashlet-chart"></div>
+	</div>
+	
+	
+</div>
+
+</body>
