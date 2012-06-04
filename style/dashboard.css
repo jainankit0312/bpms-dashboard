@@ -18,24 +18,35 @@ body
 .io-header-logo
 {
 	position:absolute;
-	top:15px;
+	top:10px;
 	left:20px;
-	height:40px;
+	height:30px;
+	width:100px;
 }
-.io-header-uifw
+
+.io-header-btn
 {
+	
+	top:50px;
 	position:absolute;
-	top:20px;
-	left:190px;
-	height:35px;
+	font-weight:normal;
+    	font-family:Verdana;
+    	font-size :14px;
+	width:120px;
+	line-height: 14px;
+	font-weight: normal;
+	padding: 4px 10px 2px 10px;
+	margin-right: 4px;
+	border: 1px solid #333333;
+	text-decoration: none;
+	color: #000;
+	border-radius: 5px 5px 5px 5px;
+	-moz-border-radius:5px 5px 5px 5px;
+	-webkit-border-radius:5px 5px 5px 5px;
+	-khtml-border-radius: 5px 5px 5px 5px;
+	z-index:1000;
 }
-.io-header-console
-{
-	position:absolute;
-	top:20px;
-	left:230px;
-	height:38px;
-}
+
 .io-header-refresh
 {
 	position:absolute;
@@ -77,7 +88,7 @@ body
 .io-dashlet-body
 {
 	position:absolute;
-	top:9%;
+	top:11%;
 	left:0px;
 	height:85%;
 	width:100%;
@@ -136,24 +147,24 @@ b:active {
 .io-dashlet1
 {
    
-   top:5%;
+   top:6%;
    left:2%;
    
 }
 .io-dashlet2
 {
 
-   top:5%;
+   top:6%;
    left:51%;
 }
 .io-dashlet3
 {
-   top:52%;
+   top:53%;
    left:2%;
 }
 .io-dashlet4
 {
-   top:52%;
+   top:53%;
    left:51%;
 }
 .io-dashlet-chart

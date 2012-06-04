@@ -4,6 +4,15 @@
 		/*$("#dashlet1,#dashlet2,#dashlet3,#dashlet4,#dashlet5,#dashlet6").click(function () {
 		      $(this).effect("shake", { times:1 }, 10);
 		});*/
+
+		$("#console").click(function () {
+			document.location.href='./console/';
+
+		});
+		$("#uifw").click(function () {
+			document.location.href='./ui-fw/';
+
+		});
 		$("#task1d").click(function () {
 		      //alert("task1d");
 			$("#tasklist").empty();	
